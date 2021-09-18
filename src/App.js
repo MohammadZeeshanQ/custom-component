@@ -1,21 +1,42 @@
+import React, { Suspense } from 'react'
+
+// css
 import './App.css';
-import styled from 'styled-components';
 
+// components
+import Landing from './Routes/Landing/Index'
+import Button from './Routes/Buttons/Index'
+import Navigation from './Routes/Navigation/Index'
 
-const DivColor = styled.div`
-  background: palevioletred;
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-`
+// Shared Component
+import NavigationBar from './Components/NavigationBar';
+
+// Library
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <DivColor>
-        Hello
-      </DivColor>
-    </div>
+    <BrowserRouter>
+      <NavigationBar />
+      <Switch>
+        <Suspense>
+
+          <Route exact path='/'>
+            <Landing />
+          </Route>
+
+          <Route exact path='/button'>
+            <Button />
+          </Route>
+
+          <Route exact path='/navigation'>
+            <Navigation />
+          </Route>
+
+        </Suspense>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

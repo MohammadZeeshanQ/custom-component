@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,4 +8,52 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fcfcfc;
+}
+
+@font-face {
+  font-family: poppinLight;
+  src: url(./Assets/fonts/Poppins-Light.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: poppinRegular;
+  src: url(./Assets/fonts/Poppins-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: poppinSemiBold;
+  src: url(./Assets/fonts/Poppins-SemiBold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: poppinBold;
+  src: url(./Assets/fonts/Poppins-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: montLight;
+  src: url(./Assets/fonts/Montserrat-Light.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: montRegular;
+  src: url(./Assets/fonts/Montserrat-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: montSemiBold;
+  src: url(./Assets/fonts/Montserrat-SemiBold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: montBold;
+  src: url(./Assets/fonts/Montserrat-Bold.ttf);
+  font-display: swap;
 }
