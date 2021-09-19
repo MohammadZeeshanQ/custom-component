@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, createRef } from 'react'
 import styled from 'styled-components'
-import IconButton from '@mui/material/IconButton';
 
 // icons
 import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
+import CloseIcon from '@mui/icons-material/Close';
+
+// Material-ui
+import { SwipeableDrawer, List, ListItem, Divider } from '@mui/material';
 
 
 const tabData = [
@@ -76,19 +78,39 @@ const TabButton = styled(Logo)`
 `;
 
 const MobileTab = styled.div`
-    display: none;
-
-    @media (max-width: 768px){
+        display: none;
+    
+         @media (max-width:768px){
         display: block;
-    }
+        cursor: pointer;
+    
+    };
 `;
 
+const IconWrapper = styled.div`
+    border-radius: 50%;
+`;
+
+const MobileLink = styled.a`
+    text-decoration: none;
+`;
+
+
+const MobileTabButton = styled.button`
+    border: none;
+    font-family: MontSemiBold;
+    color: #007FF4;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    padding: .5rem 0;
+`;
 
 
 
 export default function NavigationBar() {
 
     const [drawer, setDrawer] = useState(false);
+    const drawerRef = createRef();
 
     const drawerHandler = () => {
         setDrawer(!drawer);
@@ -116,10 +138,48 @@ export default function NavigationBar() {
                 </TabWrapper>
 
                 <MobileTab>
-                    {/* Continue Here */}
+                    <IconWrapper onClick={drawerHandler} >
+                        <MenuIcon style={{ fontSize: '2.8rem', color: '#007FF4' }} />
+                    </IconWrapper>
                 </MobileTab>
 
             </Wrapper>
-        </Root>
+
+            {/* Continue Here */}
+            <SwipeableDrawer
+                ref={drawerRef}
+                open={drawer}
+                anchor='right'
+                onOpen={drawerHandler}
+                onClose={drawerHandler}
+            >
+                <List
+                    sx={{ width: 350, }}
+                >
+                    <ListItem style={{ justifyContent: 'flex-end' }}>
+                        <CloseIcon
+                            onClick={drawerHandler}
+                            style={{ cursor: 'pointer', color: '#007FF4' }}
+                        />
+                    </ListItem>
+                    <Divider />
+                    {
+                        tabData.map((item, index) =>
+                            <div style={{ width: '100%', }}>
+                                <ListItem key={index} onClick={drawerHandler} >
+                                    <MobileLink href={item.link}>
+                                        <MobileTabButton>
+                                            {item.title}
+                                        </MobileTabButton>
+                                    </MobileLink>
+                                </ListItem>
+                                <Divider />
+                            </div>
+                        )
+                    }
+                </List>
+            </SwipeableDrawer>
+
+        </Root >
     )
 }

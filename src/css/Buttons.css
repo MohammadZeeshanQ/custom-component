@@ -1,0 +1,168 @@
+.button-one {
+  background-color: #007ff4;
+  color: #ffffff;
+  padding: 1.2rem 3rem;
+  border-radius: 0.5rem;
+}
+
+/* Button 2 */
+.button-two {
+  background-color: #007ff4;
+  color: #ffffff;
+  padding: 1.2rem 3rem;
+  border-radius: 0.5rem;
+}
+
+.button-two:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button 3 */
+.button-three {
+  background-color: #007ff4;
+  color: #ffffff;
+  padding: 1.2rem 3rem;
+  border-radius: 0.5rem;
+}
+
+.button-three:hover {
+  background-color: #3ba1ff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button 4 */
+.button-four {
+  outline: 1px #007ff4 solid;
+  color: #007ff4;
+  padding: 1.2rem 3rem;
+}
+
+/* Button 5 */
+.button-five {
+  outline: 1px #007ff4 solid;
+  color: #007ff4;
+  padding: 1.2rem 3rem;
+}
+
+.button-five:hover {
+  background-color: #007ff4;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button 6 */
+.button-six {
+  outline: 1px #007ff4 solid;
+  color: #007ff4;
+  padding: 1.2rem 3rem;
+}
+
+.button-six:hover {
+  background-color: #007ff4;
+  color: #ffffff;
+  transform: scale(1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button 7 */
+.button-seven {
+  background-color: #9c9c9c;
+  color: #ffffff;
+  padding: 1.2rem 3rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+/* Button 8 */
+.button-eight {
+  outline: 1px solid #9c9c9c;
+  color: #9c9c9c;
+  padding: 1.2rem 3rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+/* Mobile Media */
+@media screen and (max-width: 600px) {
+  .button-one {
+  }
+
+  /* Button 2 */
+  .button-two {
+  }
+
+  /* Button 3 */
+  .button-three {
+  }
+
+  /* Button 4 */
+  .button-four {
+  }
+
+  /* Button 5 */
+  .button-five {
+  }
+
+  /* Button 6 */
+  .button-six {
+  }
+
+  /* Button 7 */
+  .button-seven {
+  }
+
+  /* Button 8 */
+  .button-eight {
+  }
+}
+
+/* Tablet Media */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .button-one {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+  }
+
+  /* Button 2 */
+  .button-two {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+  }
+
+  /* Button 3 */
+  .button-three {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+  }
+
+  /* Button 4 */
+  .button-four {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+  }
+
+  /* Button 5 */
+  .button-five {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+  }
+
+  /* Button 6 */
+  .button-six {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+  }
+
+  /* Button 7 */
+  .button-seven {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+  }
+
+  /* Button 8 */
+  .button-eight {
+    padding: 1rem 2rem;
+    font-size: 0.6rem;
+  }
+}
