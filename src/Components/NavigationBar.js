@@ -15,7 +15,7 @@ const tabData = [
         'link': '/button',
     },
     {
-        'title': 'Navigation',
+        'title': 'Nav Bar',
         'link': '/navigation',
     }
 ]
@@ -23,7 +23,6 @@ const tabData = [
 
 const Root = styled.div`
     position: fixed;
-    border: 1px red solid;
     width: 100vw;
 `;
 
@@ -154,27 +153,25 @@ export default function NavigationBar() {
                 onClose={drawerHandler}
             >
                 <List
-                    sx={{ width: 350, }}
+                    sx={{ width: 330, }}
                 >
-                    <ListItem style={{ justifyContent: 'flex-end' }}>
+                    <ListItem sx={{ justifyContent: 'flex-end', alignItem: 'center', margin: '.5rem 0' }}>
                         <CloseIcon
                             onClick={drawerHandler}
-                            style={{ cursor: 'pointer', color: '#007FF4' }}
+                            style={{ cursor: 'pointer', color: '#007FF4', fontSize: '2.2rem', }}
                         />
                     </ListItem>
                     <Divider />
                     {
                         tabData.map((item, index) =>
-                            <div style={{ width: '100%', }}>
-                                <ListItem key={index} onClick={drawerHandler} >
-                                    <MobileLink href={item.link}>
-                                        <MobileTabButton>
-                                            {item.title}
-                                        </MobileTabButton>
-                                    </MobileLink>
+                            <MobileLink key={index} style={{ width: '100%', cursor: 'pointer' }} href={item.link}>
+                                <ListItem onClick={drawerHandler} sx={{ margin: '.5rem 0' }}>
+                                    <MobileTabButton>
+                                        {item.title}
+                                    </MobileTabButton>
                                 </ListItem>
                                 <Divider />
-                            </div>
+                            </MobileLink>
                         )
                     }
                 </List>

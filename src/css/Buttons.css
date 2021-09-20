@@ -3,6 +3,7 @@
   color: #ffffff;
   padding: 1.2rem 3rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 /* Button 2 */
@@ -11,6 +12,7 @@
   color: #ffffff;
   padding: 1.2rem 3rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .button-two:hover {
@@ -24,25 +26,30 @@
   color: #ffffff;
   padding: 1.2rem 3rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .button-three:hover {
-  background-color: #3ba1ff;
+  background-color: #62b4ff;
   transition: all 0.3s ease-in-out;
 }
 
 /* Button 4 */
 .button-four {
   outline: 1px #007ff4 solid;
+  background-color: #ffffff;
   color: #007ff4;
   padding: 1.2rem 3rem;
+  cursor: pointer;
 }
 
 /* Button 5 */
 .button-five {
   outline: 1px #007ff4 solid;
   color: #007ff4;
+  background-color: #ffffff;
   padding: 1.2rem 3rem;
+  cursor: pointer;
 }
 
 .button-five:hover {
@@ -55,7 +62,9 @@
 .button-six {
   outline: 1px #007ff4 solid;
   color: #007ff4;
+  background-color: #ffffff;
   padding: 1.2rem 3rem;
+  cursor: pointer;
 }
 
 .button-six:hover {
@@ -71,7 +80,7 @@
   color: #ffffff;
   padding: 1.2rem 3rem;
   border-radius: 0.5rem;
-  pointer-events: none;
+  cursor: not-allowed;
 }
 
 /* Button 8 */
@@ -80,7 +89,7 @@
   color: #9c9c9c;
   padding: 1.2rem 3rem;
   border-radius: 0.5rem;
-  pointer-events: none;
+  cursor: not-allowed;
 }
 
 /* Mobile Media */

@@ -19,8 +19,12 @@ const Header = styled.h1`
     letter-spacing: 2px;
     font-family: poppinSemiBold;
 
-    @media (max-width:768px){
-        font-size: 2rem;
+   @media (max-width:600px){
+        font-size: 2.5rem;
+    };
+
+      @media (min-width:601px) and (max-width: 1024px){
+        font-size: 2.5rem;
     };
 `
 
@@ -30,7 +34,11 @@ const Description = styled.p`
    letter-spacing: 1px;
    margin: 1rem 0;
 
-    @media (max-width:768px){
+    @media (max-width:600px){
+        font-size: 1rem;
+    };
+
+      @media (min-width:601px) and (max-width: 1024px){
         font-size: 1rem;
     };
 `
@@ -51,7 +59,16 @@ const Button = styled.button`
         background-color: #3BA1FF;
         transition: all .3s ease-in-out;
     }
-`
+
+    @media (max-width:600px){
+        font-size: .9rem;
+        font-family: poppinRegular;
+    };
+
+    @media (min-width:601px) and (max-width: 1024px){
+        font-size: .6rem;
+    };
+`;
 
 export default function Index() {
     return (

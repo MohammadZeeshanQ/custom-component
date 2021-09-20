@@ -18,12 +18,19 @@ const Wrapper = styled.div`
 
 const ButtonWrapper = styled.div`
     padding: 5rem 0;
-    border: 1px #050505 solid;
+    margin: 1rem 2rem;
+    background: #ffffff;
+    border-radius: 1rem;
     text-align: center;
 
-      @media (max-width:600px){
+     @media (max-width:600px){
         padding: 4rem 0;
-    }
+        margin: 1rem .5rem;
+    };
+
+      @media (min-width:601px) and (max-width: 1024px){
+        margin: 1rem .5rem;
+    };
 `;
 
 // Button style assigned
@@ -80,7 +87,7 @@ export default function ButtonGrid() {
                                 md={4}
                             >
                                 <ButtonWrapper>
-                                    <button className={item.style} style={{ border: 'none', cursor: 'pointer', fontFamily: 'MontSemiBold', letterSpacing: '2px' }} >
+                                    <button className={item.style} style={{ border: 'none', fontFamily: 'MontSemiBold', letterSpacing: '2px' }} >
                                         {item.name}
                                     </button>
                                 </ButtonWrapper>
