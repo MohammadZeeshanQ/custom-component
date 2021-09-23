@@ -19,7 +19,7 @@ const Root = styled.div`
 `;
 
 const Wrapper = styled.div`
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 `;
 
