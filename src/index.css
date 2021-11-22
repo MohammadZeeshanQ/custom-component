@@ -9,6 +9,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: poppinLight;
   src: url(./Assets/fonts/Poppins-Light.ttf);
