@@ -1,62 +1,17 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-@font-face {
-  font-family: poppinLight;
-  src: url(./Assets/fonts/Poppins-Light.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: poppinRegular;
-  src: url(./Assets/fonts/Poppins-Regular.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: poppinSemiBold;
-  src: url(./Assets/fonts/Poppins-SemiBold.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: poppinBold;
-  src: url(./Assets/fonts/Poppins-Bold.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: montLight;
-  src: url(./Assets/fonts/Montserrat-Light.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: montRegular;
-  src: url(./Assets/fonts/Montserrat-Regular.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: montSemiBold;
-  src: url(./Assets/fonts/Montserrat-SemiBold.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: montBold;
-  src: url(./Assets/fonts/Montserrat-Bold.ttf);
-  font-display: swap;
+:root {
+	--MainBlueColor: #007ff4;
 }
